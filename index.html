@@ -17,16 +17,64 @@
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
 <script src="js/acciones.js"></script>
 <script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
 
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
 
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
 </head>
 
-<body>
+<body onLoad="MM_preloadImages('imagenes/aro.jpg')">
 
 <div data-role="page" id="Principal" data-theme="a">
 <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regrsar" data-back-btn-theme="a">
 <h1>LA CONTAMINACION</h1>
 </div>
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/1.jpg" alt="1" title="1" id="wows1_0"/></li>
+		<li><img src="data1/images/4.jpg" alt="4" title="4" id="wows1_1"/></li>
+		<li><img src="data1/images/mex.jpg" alt="mex" title="mex" id="wows1_2"/></li>
+		<li><img src="data1/images/2.jpg" alt="2" title="2" id="wows1_3"/></li>
+		<li><img src="data1/images/3.jpg" alt="3" title="3" id="wows1_4"/></li>
+		<li><img src="data1/images/brasil.jpg" alt="brasil" title="brasil" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data1/images/5.jpg" alt="slider" title="5" id="wows1_6"/></a></li>
+		<li><img src="data1/images/6.jpg" alt="6" title="6" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="1"><span><img src="data1/tooltips/1.jpg" alt="1"/>1</span></a>
+		<a href="#" title="4"><span><img src="data1/tooltips/4.jpg" alt="4"/>2</span></a>
+		<a href="#" title="mex"><span><img src="data1/tooltips/mex.jpg" alt="mex"/>3</span></a>
+		<a href="#" title="2"><span><img src="data1/tooltips/2.jpg" alt="2"/>4</span></a>
+		<a href="#" title="3"><span><img src="data1/tooltips/3.jpg" alt="3"/>5</span></a>
+		<a href="#" title="brasil"><span><img src="data1/tooltips/brasil.jpg" alt="brasil"/>6</span></a>
+		<a href="#" title="5"><span><img src="data1/tooltips/5.jpg" alt="5"/>7</span></a>
+		<a href="#" title="6"><span><img src="data1/tooltips/6.jpg" alt="6"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wow slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
 <div data-role="main" class="ui-content">
 <div data-role="collapsible" data-content-theme="false">
 </div>
@@ -317,33 +365,6 @@ Contenedor naranja: aceite de cocina usado.
         <center>
           <h1>Propuesta acerca de la contaminacion</h1></center>
       </div>
-      <!-- Start WOWSlider.com BODY section -->
-<div id="wowslider-container1">
-<div class="ws_images"><ul>
-		<li><img src="data1/images/alo.jpg" alt="alo" title="alo" id="wows1_0"/></li>
-		<li><img src="data1/images/agua.jpg" alt="agua" title="agua" id="wows1_1"/></li>
-		<li><img src="data1/images/area.jpg" alt="area" title="area" id="wows1_2"/></li>
-		<li><img src="data1/images/aro.jpg" alt="aro" title="aro" id="wows1_3"/></li>
-		<li><img src="data1/images/basura.jpg" alt="basura" title="basura" id="wows1_4"/></li>
-		<li><img src="data1/images/brasil.jpg" alt="brasil" title="brasil" id="wows1_5"/></li>
-		<li><a href="http://wowslider.com/vi"><img src="data1/images/capa.jpg" alt="bootstrap carousel" title="capa" id="wows1_6"/></a></li>
-		<li><img src="data1/images/conta.jpg" alt="conta" title="conta" id="wows1_7"/></li>
-	</ul></div>
-	<div class="ws_bullets"><div>
-		<a href="#" title="alo"><span><img src="data1/tooltips/alo.jpg" alt="alo"/>1</span></a>
-		<a href="#" title="agua"><span><img src="data1/tooltips/agua.jpg" alt="agua"/>2</span></a>
-		<a href="#" title="area"><span><img src="data1/tooltips/area.jpg" alt="area"/>3</span></a>
-		<a href="#" title="aro"><span><img src="data1/tooltips/aro.jpg" alt="aro"/>4</span></a>
-		<a href="#" title="basura"><span><img src="data1/tooltips/basura.jpg" alt="basura"/>5</span></a>
-		<a href="#" title="brasil"><span><img src="data1/tooltips/brasil.jpg" alt="brasil"/>6</span></a>
-		<a href="#" title="capa"><span><img src="data1/tooltips/capa.jpg" alt="capa"/>7</span></a>
-		<a href="#" title="conta"><span><img src="data1/tooltips/conta.jpg" alt="conta"/>8</span></a>
-	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">slider</a> by WOWSlider.com v8.7</div>
-<div class="ws_shadow"></div>
-</div>	
-<script type="text/javascript" src="engine1/wowslider.js"></script>
-<script type="text/javascript" src="engine1/script.js"></script>
-<!-- End WOWSlider.com BODY section -->
     <div data-role="content" aling="center">
        <div>
          <p><h3>En ellas ponen de manifiesto la necesidad de apostar por poner a las personas y al medio ambiente en el epicentro de las políticas europeas para salir de la crisis de forma justa y sostenible.
@@ -378,7 +399,7 @@ Según las ONG firmantes, los europarlamentarios que salgan de las urnas deberá
 <br>
 </div>
 <div>
-<img src="imagenes/agua.jpg" width="100%" height="100%"></div>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25','','imagenes/aro.jpg',1)"><img src="imagenes/agua.jpg" width="640" height="480" id="Image25"></a></div>
 </div>
 </div>
 <div>
@@ -386,7 +407,7 @@ Según las ONG firmantes, los europarlamentarios que salgan de las urnas deberá
        </div>
        </div>
     <div data-role="footer" data-theme="a" data-position="fixed">
-       <h4>Aplicacion tres, LYOF</h4>
+       <h4>Aplicacion TRES, LYOF</h4>
      </div>
    </div>
  
